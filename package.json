@@ -1,0 +1,42 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "generate-serial-number",
+  "title": "generate serial number",
+  "description": "This tool allows you to easily generate a sequence of serial numbers based on your specified starting point, total count, and optional prefix or suffix. Whether you need to create product IDs, invoice numbers, or simply a range of numbers for any purpose, this tool makes the process fast and customizable. Simply input the total number of serial numbers you need, the starting number, and any prefix or suffix you’d like to add, and the generated sequence will be automatically copied to your clipboard for easy use.",
+  "icon": "extension-icon.png",
+  "author": "iguohui",
+  "categories": [
+    "Applications",
+    "Developer Tools"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "generate-serial-number",
+      "title": "generate serial number",
+      "subtitle": "generate serial number",
+      "description": "This tool allows you to easily generate a sequence of serial numbers based on your specified starting point, total count, and optional prefix or suffix. Whether you need to create product IDs, invoice numbers, or simply a range of numbers for any purpose, this tool makes the process fast and customizable. Simply input the total number of serial numbers you need, the starting number, and any prefix or suffix you’d like to add, and the generated sequence will be automatically copied to your clipboard for easy use.",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.86.1",
+    "@raycast/utils": "^1.17.0"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.11",
+    "@types/node": "20.8.10",
+    "@types/react": "18.3.3",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "build": "ray build",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "prepublishOnly": "echo \"\\n\\nIt seems like you are trying to publish the Raycast extension to npm.\\n\\nIf you did intend to publish it to npm, remove the \\`prepublishOnly\\` script and rerun \\`npm publish\\` again.\\nIf you wanted to publish it to the Raycast Store instead, use \\`npm run publish\\` instead.\\n\\n\" && exit 1",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
